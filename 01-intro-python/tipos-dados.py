@@ -130,4 +130,5 @@ print(pessoa)
 
 # none
 # null
+# nada
 nulo = None
