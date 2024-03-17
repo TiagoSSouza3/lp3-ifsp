@@ -6,7 +6,7 @@ def main():
         print("Valor invalido")
         return
     
-    imc = peso / altura * altura
+    imc = peso / (altura * altura)
 
     def ver_imc():
         if imc < 18.5:
@@ -26,6 +26,14 @@ def main():
 
     print("Estado do peso atual: " + ver_imc())
 
+    if ver_imc() != "Peso normal":
+        peso_ideal = 24.9 * altura * altura
+        peso = peso_ideal - peso
 
+        if peso > 0:
+            print("Você deve ganhar " + f'{peso:.2f}' + "Kg para entrar no peso ideal")
+        else: 
+            peso = peso * -1
+            print("Você deve perder " + f'{peso:.2f}' + "Kg para entrar no peso ideal")
 
 main()
