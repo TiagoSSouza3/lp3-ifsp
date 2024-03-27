@@ -11,5 +11,3 @@ elif nota < 2.5 and nota >= 0:
     print("nota: E")
 else:
     print("NOta invalida")
-
-
