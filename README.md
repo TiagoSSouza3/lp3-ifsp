@@ -50,3 +50,47 @@
 - Deletar o token no GitHub
 
 - Deslogar do GitHub
+
+### Instalar Flask
+
+- Instalação
+
+``` bash
+    curl -sSL https://install.python-poetry.org | python3 -
+```
+
+- Adicionar ao Path
+
+
+``` bash
+    export PATH="/home/estudante1/.local/bin:$PATH"
+```
+
+- Criar projeto Flask
+
+
+``` bash
+    poetry new meu_projeto
+```
+
+- Comandos do projeto flask
+
+
+``` bash
+    poetry shell
+```
+Ctrl + Shift + P
+
+Select Interpreter
+
+Selecionar o ambiente virtual
+
+- Adicionar Flask ao projeto
+
+```bash
+    poetry add Flask
+```
+```bash
+    flask --app meu_projeto/app.py run
+    poetry run flask --app meu_projeto/app.py run
+```
